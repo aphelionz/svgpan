@@ -147,11 +147,6 @@ function handleMouseWheel(evt) {
 	if(!enableZoom)
 		return;
 
-	if(evt.preventDefault)
-		evt.preventDefault();
-
-	evt.returnValue = false;
-
 	var svgDoc = evt.target.ownerDocument;
 
 	var delta;
